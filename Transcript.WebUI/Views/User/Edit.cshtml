@@ -1,0 +1,40 @@
+﻿@model Transcript.Domain.Entities.User
+
+<style>
+    .panelTitle {
+        color: #e65100;
+        font-size: 27px;
+        text-align: center;
+    }
+</style>
+
+<div class="center-align panelTitle">
+    <h3>Редактирование пользователя "@Model.Login"</h3>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="z-depth-1 col s12 m6 l4 offset-m3 offset-l4 white center-align" style="padding: 20px;">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="input-field">
+            @Html.LabelFor(model => model.Login)
+            @Html.EditorFor(model => model.Login)
+            @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="input-field">
+            @Html.LabelFor(model => model.Password)
+            @Html.EditorFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+        </div>
+        <div class="panel-footer">
+            <input type="submit" value="Сохранить" class="btn btn-primary" />
+            @Html.ActionLink("Назад", "Index", null, new { @class = "btn btn-default" })
+        </div>
+    </div>
+}
+

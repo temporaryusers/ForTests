@@ -1,0 +1,42 @@
+﻿@model Transcript.WebUI.Models.LoginModel
+<div class="col s4">
+    <h4 class="red-text" style="padding: 20px;">АВТОРИЗАЦИЯ</h4>
+</div>
+@using (Html.BeginForm("Login", "Account"))
+{
+    @Html.AntiForgeryToken()
+    <div class="container center-align">
+        <h4 class="red-text">@Html.ValidationSummary(true)</h4>
+    </div>
+    <div class="row">
+        <div class="col s8" style="padding: 20px; float: right">
+            <h3>О СИСТЕМЕ</h3>
+            <p>
+                Основной целью балльно-рейтинговой системы является определение уровня качества и успешности освоения студентом учебных дисциплин через балльные оценки и рейтинги с измеряемой в зачетных единицах трудоемкостью каждой дисциплины и образовательной программы в целом.
+
+                <br>Балльно-рейтинговая система рассматривается не только как система оценки знаний студентов, но и как важнейшая часть системы контроля качества образовательной деятельности Института.
+
+                <br>Балльно-рейтинговая система основана на подсчете баллов, «заработанных» студентом за все виды учебной работы (посещение лекций, работа на практических, семинарских занятиях, выполнение лабораторных, контрольных работ и т.д.).
+            </p>
+        </div>
+        <div class="z-depth-1 col s4 white" style="padding: 50px;">
+            <div class="container center-align">
+                <h5 class="red-text">@Html.ValidationMessageFor(model => model.login)</h5>
+            </div>
+            <div class="input-field">
+                @Html.LabelFor(model => model.login, "ЛОГИН")
+                @Html.EditorFor(model => model.login)
+            </div>
+            <div class="container center-align">
+                <h5 class="red-text">@Html.ValidationMessageFor(model => model.password)</h5>
+            </div>
+            <div class="input-field">
+                @Html.LabelFor(model => model.password, "ПАРОЛЬ")
+                @Html.EditorFor(model => model.password)
+            </div>
+            <div class="container center-align">
+                <button class="waves-effect waves-light btn light-blue accent-3" type="submit" name="action">Войти</button>
+            </div>
+        </div>
+    </div>
+}

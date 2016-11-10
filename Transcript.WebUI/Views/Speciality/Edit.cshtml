@@ -1,0 +1,56 @@
+﻿@model Transcript.Domain.Entities.Speciality
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<style>
+    .panelTitle {
+        color: #e65100;
+        font-size: 27px;
+        text-align: center;
+    }
+</style>
+
+<div class="center-align panelTitle">
+    <h3>Редактирование специальности "@Model.Name"</h3>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="z-depth-1 col s12 m6 l4 offset-m3 offset-l4 white center-align" style="padding: 20px;">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="input-field">
+            @Html.LabelFor(model => model.Name)
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="input-field">
+            @Html.LabelFor(model => model.Abbreviation)
+            @Html.EditorFor(model => model.Abbreviation)
+            @Html.ValidationMessageFor(model => model.Abbreviation, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="input-field">
+            @Html.LabelFor(model => model.Code)
+            @Html.EditorFor(model => model.Code)
+            @Html.ValidationMessageFor(model => model.Code, "", new { @class = "text-danger" })
+
+            <div style="text-align:left; padding:7px">
+                Факультет
+            </div>
+
+            @Html.DropDownList("DepartmentId", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.DepartmentId, "", new { @class = "text-danger" })
+
+            <div style="padding:10px">
+                <input type="submit" value="Сохранить" class="btn btn-default" />
+                @Html.ActionLink("Назад", "Index", null, new { @class = "btn btn-default" })
+            </div>
+
+        </div>
+    </div>
+}
+

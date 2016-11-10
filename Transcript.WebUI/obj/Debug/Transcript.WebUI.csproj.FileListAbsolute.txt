@@ -1,0 +1,74 @@
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Transcript.WebUI.dll.config
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Transcript.WebUI.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Transcript.WebUI.pdb
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Castle.Core.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\EntityFramework.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Moq.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Ninject.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Ninject.Web.Common.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Ninject.Web.Mvc.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\System.Web.Helpers.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\System.Web.Webpages.Deployment.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\System.Web.Webpages.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\System.Web.Webpages.Razor.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Transcript.Domain.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\WebActivator.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Transcript.Domain.pdb
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Castle.Core.xml
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\EntityFramework.xml
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Moq.xml
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Ninject.xml
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Ninject.Web.Common.xml
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Ninject.Web.Mvc.xml
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\System.Web.Webpages.xml
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\System.Web.Webpages.Deployment.xml
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\System.Web.Webpages.Razor.xml
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\System.Web.Helpers.xml
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\obj\Debug\Transcript.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\obj\Debug\Transcript.WebUI.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\obj\Debug\Transcript.WebUI.pdb
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\System.Web.Mvc.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\System.Web.Mvc.xml
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\System.Web.Razor.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\System.Web.Razor.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Transcript.WebUI.dll.config
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Transcript.WebUI.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Transcript.WebUI.pdb
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Castle.Core.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\EntityFramework.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Moq.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Ninject.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Ninject.Web.Common.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Ninject.Web.Mvc.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\System.Web.Helpers.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\System.Web.Mvc.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\System.Web.Razor.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\System.Web.Webpages.Deployment.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\System.Web.Webpages.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\System.Web.Webpages.Razor.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Transcript.Domain.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\WebActivator.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Transcript.Domain.pdb
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Castle.Core.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\EntityFramework.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Moq.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Ninject.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Ninject.Web.Common.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\Ninject.Web.Mvc.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\System.Web.Mvc.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\System.Web.Razor.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\System.Web.Webpages.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\System.Web.Webpages.Deployment.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\System.Web.Webpages.Razor.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\bin\System.Web.Helpers.xml
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\obj\Debug\Transcript.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\obj\Debug\Transcript.WebUI.dll
+C:\Users\админ\Desktop\Новая папка\TranscriptApp\Transcript.WebUI\obj\Debug\Transcript.WebUI.pdb
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\админ\Desktop\TranscriptApp\Transcript.WebUI\bin\Newtonsoft.Json.xml

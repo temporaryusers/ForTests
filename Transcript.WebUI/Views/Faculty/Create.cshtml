@@ -1,0 +1,45 @@
+﻿@model Transcript.Domain.Entities.Faculty
+
+<style>
+    .panelTitle {
+        color: #e65100;
+        font-size: 27px;
+        text-align: center;
+    }
+</style>
+
+<div class="center-align panelTitle">
+    <h3>Добавление факультета</h3>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="z-depth-1 col s12 m6 l4 offset-m3 offset-l4 white center-align" style="padding: 20px;">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="input-field">
+            @Html.LabelFor(model => model.Name)
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="input-field">
+            @Html.LabelFor(model => model.Abbreviation)
+            @Html.EditorFor(model => model.Abbreviation)
+            @Html.ValidationMessageFor(model => model.Abbreviation, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="input-field">
+            @Html.LabelFor(model => model.Number)
+            @Html.EditorFor(model => model.Number)
+            @Html.ValidationMessageFor(model => model.Number, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="panel-footer">
+            <input type="submit" value="Создать" class="btn btn-primary" />
+            @Html.ActionLink("Назад", "Index", null, new { @class = "btn btn-default" })
+        </div>
+    </div>
+}

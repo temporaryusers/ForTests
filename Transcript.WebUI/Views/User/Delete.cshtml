@@ -1,0 +1,45 @@
+﻿@model Transcript.Domain.Entities.User
+
+<style>
+    .panelTitle {
+        color: #e65100;
+        font-size: 27px;
+        text-align: center;
+    }
+</style>
+
+<div class="panel panel-default" style="padding:30px">
+    <div class="panelTitle">
+        Вы уверены что хотите удалить это ?
+    </div>
+    <table class="table table-striped table-condensed table-bordered">
+        <tr>
+            <th class="text-right">
+                @Html.DisplayNameFor(model => model.Login)
+            </th>
+            <th class="text-right">
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+        </tr>
+
+        <tr>
+            <td class="text-right">
+                @Html.DisplayFor(model => model.Login)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(model => model.Password)
+            </td>
+        </tr>
+    </table>
+    @using (Html.BeginForm("DeleteConfirmed", "User", Model))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="panel-footer">
+            <input type="submit" value="Удалить" class="btn btn-primary" />
+            @Html.ActionLink("Назад", "Index", null, new { @class = "btn btn-default" })
+        </div>
+    }
+</div>
+
+

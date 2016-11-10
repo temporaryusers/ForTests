@@ -1,0 +1,58 @@
+﻿@model Transcript.Domain.Entities.Absence
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Absence</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.SecondName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.SecondName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Teacher.SecondName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Teacher.SecondName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeClass.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeClass.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateAbsence)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateAbsence)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

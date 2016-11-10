@@ -1,0 +1,118 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система учета успеваемости</title>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+    <script src="~/Scripts/jquery.jqGrid.src.js"></script>
+    <script src="~/Scripts/i18n/grid.locale-ru.js"></script>
+    <link href="~/Content/jquery.jqGrid/ui.jqgrid.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/myMaterialize.css" rel="stylesheet" />
+    <style>
+        .ui-jqgrid .ui-pg-input {
+            height: 20px;
+        }
+
+        .ui-jqgrid{
+            height: 550px;
+        }
+
+        .ui-jqgrid-title {
+            font-size: 18px;
+            color: #e65100;
+        }
+
+        .ui-jqgrid .ui-jqgrid-pager {
+            height: 50px;
+        }
+
+        #jpager, #jqg {
+            font-size: 16px;
+            align-content: center;
+            padding-left: 10px;
+        }
+
+        html, body, div, head {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div><img src="~/Content/Image/Logo.jpg" style="max-width: 100%; height: auto;"></div>
+        <div class="col s12 no-padding">
+            <nav class="teal lighten-1">
+                <div class="nav-wrapper">
+                    <div class="left hide-on-med-and-down padding-right" style="padding: 4px 7px 2px 30px;">
+                        <div class="waves-effect waves-light btn light-blue accent-3">
+                            @Html.ActionLink("ГЛАВНАЯ", "Index", "Home")
+                        </div>
+                        <div class="waves-effect waves-light btn light-blue accent-3">
+                            @Html.ActionLink("УСПЕВАЕМОСТЬ", "Index", "StatisticsTranscript")
+                        </div>
+                        <div class="waves-effect waves-light btn light-blue accent-3">
+                            @Html.ActionLink("ПРОПУСКИ ЗАНЯТИЙ", "Index", "StatisticsAbsence")
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="ui-jqgrid">
+        <table id="jqg"></table>
+        <div id="jpager" style="width:auto"></div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#jqg").jqGrid({
+                    url: '@Url.Action("GetData")',
+                    datatype: "json",
+                    colNames: ['Студент', 'Группа', 'Предмет', 'Преподаватель', 'Количество пропусков'],
+                    colModel: [
+                    { name: 'StudentName', index: 'StudentName', width: 350, stype: 'text', sortable: true },
+                    { name: 'GroupName', index: 'GroupName', width: 60, sortable: true },
+                    { name: 'SubjectName', index: 'SubjectName', width: 400, sortable: true },
+                    { name: 'TeacherName', index: 'TeacherName', width: 380, sortable: true },
+                    { name: 'TotalAbsence', index: 'TotalAbsence', width: 130, sortable: true, sorttype: 'number' }
+                    ],
+                    rowNum: 10,
+                    rowList: [10, 20, 30],
+                    pager: '#jpager',
+                    loadonce: true, // загрузка только один раз
+                    sortname: 'StudentName', // сортировка по умолчанию по столбцу Id
+                    sortorder: "desc", // порядок сортировки
+                    caption: "Посещаемость студентов ДНУЖТ"
+                });
+                $("#jqg").jqGrid('navGrid', '#jpager', {
+
+                    add: false,
+                    del: false,
+                    edit: false,
+                    search: true,
+                    searchtext: "Поиск",
+                    refresh: true,
+                    refreshtext: "Обновить"
+                });
+            });
+        </script>
+    </div>
+
+    <div class="col s12" style="padding: 10px">
+        <div class="waves-effect waves-light btn grey">
+            @Html.ActionLink("Экспорт в Excel", "ExportToExcel", "StatisticsAbsence")
+        </div>
+    </div>
+    <footer class="page-footer teal lighten-1">
+        <div class="footer-copyright teal lighten-1">
+            <div class="container center-align">
+                <h6 class="white-text">© @DateTime.Now.Year Copyright by ДНУЖТ </h6>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

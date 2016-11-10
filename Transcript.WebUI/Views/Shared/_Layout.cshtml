@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система учета успеваемости</title>
+    <link href="~/Content/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div><img src="~/Content/Image/Logo.jpg" style="max-width: 100%; height: auto;"></div>
+            <div class="col s12 no-padding">
+                <nav class="teal lighten-1">
+                    <div class="nav-wrapper">
+                        <div class="left hide-on-med-and-down padding-right" style="padding: 4px 7px 2px 30px;">
+                            <div class="waves-effect waves-light btn light-blue accent-3">
+                                @Html.ActionLink("ГЛАВНАЯ", "Index", "Home")
+                            </div>
+                            <div class="waves-effect waves-light btn light-blue accent-3">
+                                @Html.ActionLink("УСПЕВАЕМОСТЬ", "Index", "StatisticsTranscript")
+                            </div>
+                            <div class="waves-effect waves-light btn light-blue accent-3">
+                                @Html.ActionLink("ПРОПУСКИ ЗАНЯТИЙ", "Index", "StatisticsAbsence")
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="center-align">
+                <h4 class="red-text" style="padding: 20px;">@TempData["message"]</h4>
+            </div>
+            @RenderBody()
+        </div>
+        <footer class="page-footer teal lighten-1">
+            <div class="footer-copyright teal lighten-1">
+                <div class="container center-align">
+                    <h6 class="white-text">© @DateTime.Now.Year Copyright by ДНУЖТ </h6>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/materialize.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>
+</html>
